@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link href = "style.css" rel="stylesheet">
+    <title>Blog</title>
+    <link rel="icon" type="image/x-icon" href="images\monitor-icon.svg">
+    
+</head>
+<body>
+    <header class="site-header sticky-top py-0">
+     
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <svg height="50" width="50">
+                    <defs>
+                      <filter id="f1" x="0" y="0" width="200%" height="200%">
+                        <feOffset result="offOut" in="SourceGraphic" dx="10" dy="10" />
+                        <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+                      </filter>
+                    </defs>
+                    <rect width="30" height="30" stroke="blue" stroke-width="3"
+                    fill="green" filter="url(#f1)" />
+                  </svg>
+              <a class="navbar-brand" href="index.html">Front-end Technologies</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="TopAuthors.html">Top Authors</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Join
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="sign_in.html">Sign in.</a></li>
+                        <li><a class="dropdown-item" href="sign_in.html">Be an author.</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="sign_in.html">New? Sign up now !</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3 mt-lg-0" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="position-relative overflow-hidden p-0 p-md-0 m-md-0 text-center bg-light">
+            <div class="hero-image ">
+                <img src="images\pexels-abdul-kayum-10845119.jpg" alt="Image not found!!">
+                <div class="hero-text">
+                    <h1 class="display-2 fw-normal">Blog_</h1>
+                    <p class="lead fw-normal">Welcome to the front-end technologies blog.</p>
+                    <!--<a class="btn btn-outline-secondary" href="#">about</a>-->
+                </div>
+            </div>          
+        </div>
+
+        <div class="p-1 p-md-1 m-md-1 border rounded bg-dark">
+            <h4 class="light_color_txt display-10 fw-normal me-auto text-center">Latest posts</h4>
+            <div class="row mb-2">
+                <div class="col-md-6">
+                  <div class="front_card row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                      <!--<strong class="d-inline-block mb-2">Style</strong>-->
+                      <h3 class="light_color_txt mb-0">CSS</h3>
+                      <div class="light_color_txt mb-1 text-muted">Wikipedia, Nov 12</div>
+                      <p class="light_color_txt card-text mb-auto">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document
+                        written in </p>
+                      <a href="pages\page_on_css.html" class="btn btn-outline-light" type="button">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="images\logos\css.png"  >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="front_card row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                      <!--<strong class="d-inline-block mb-2">Script</strong>-->
+                      <h3 class="light_color_txt mb-0">Angular JS</h3>
+                      <div class="light_color_txt mb-1 text-muted">Wikipedia, Nov 11</div>
+                      <p class="light_color_txt mb-auto">AngularJS is a discontinued free and open-source JavaScript-based  web framework for developing single-page 
+                        applications. It   </p>
+                      <a href="/pages\page_on_AnglarJs.html" class="btn btn-outline-light" type="button">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                      <img class="bd-placeholder-img" width="200" height="250" src="images\logos\angular js.png"  >
+            
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="front_card row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <!--<strong class="d-inline-block mb-2">Script</strong>-->
+                    <h3 class="light_color_txt mb-0">Tailwind CSS</h3>
+                    <div class="light_color_txt mb-1 text-muted">Wikipedia, Nov 9</div>
+                    <p class="light_color_txt mb-auto">Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS framework</p>
+                    <a href="/pages\Tailwind_page.html" class="btn btn-outline-light" type="button">Continue reading</a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" src="images\logos\tailwind.png"  >
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="tab_bottom rounded-4 mt-3 mb-3 p-3">
+            <div class="row align-items-center">
+                <h4 class="light_color_txt display-10 fw-normal me-auto text-center">Posts</h4>
+                <!--<div class="col">
+                    <strong class="light_color_txt text-center mb-2">Home</strong>
+                </div>
+                <div class="col">
+                    <strong class="light_color_txt text-center mb-2">Style</strong>
+                </div>
+                <div class="col">
+                    <strong class="light_color_txt text-center mb-2">Scripts</strong>
+                </div>
+                <div class="col">
+                    <strong class="light_color_txt text-center mb-2">Design</strong>
+                </div>-->
+              </div>
+            
+       
+            
+        </div>
+
+          <div class="col-md-0 p-1">
+            <div class="h-100 p-2 text-white bg-dark rounded-3 row g-0">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h2>Flutter </h2>
+                    <h4 class="fw-light">Wikipedia, Oct 21</h4>
+                    <p>Flutter is an open-source UI software development kit created by Google. It is used to develop cross-platform applications for Android, iOS, Li</p>
+                    <a href="pages\flutter_page.html" class="btn btn-outline-light" type="button">Continue Reading</a>
+                </div>
+                <div class="col-auto">
+                    <img class="bd-placeholder-img" width="200" height="250" src="images\logos\flutter.png"  >
+                </div>
+            </div>
+          </div>
+          <div class="col-md-0 p-1">
+            <div class="h-100 p-2 text-white bg-dark rounded-3 row g-0">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h2>jQuery</h2>
+                    <h4 class="fw-light">Wikipedia, Oct 10</h4>
+                    <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax</p>
+                    <a href= "pages\Jquerry_page.html" class="btn btn-outline-light" type="button">Continue Reading</a>
+                </div>
+                <div class="col-auto">
+                    <img class="bd-placeholder-img" width="200" height="250" src="images\logos\jquerry.png"  >
+                </div>
+            </div>
+          </div>
+          <div class="col-md-0 p-1">
+            <div class="h-100 p-2 text-white bg-dark rounded-3 row g-0">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h2>React, the JavaScript library</h2>
+                    <h4 class="fw-light">Wikipedia, Oct 2</h4>
+                    <p>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3] for building user interfaces based on UI components. </p>
+                    <a href ="pages\React_page.html" class="btn btn-outline-light" type="button">Continue Reading</a>
+                </div>
+                <div class="col-auto">
+                    <img class="bd-placeholder-img" width="200" height="250" src="images\logos\React-icon.png"  >
+                </div>
+            </div>
+          </div>
+          <div class="col-md-0 p-1">
+            <div class="h-100 p-2 text-white bg-dark rounded-3 row g-0">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h2>Vue.js</h2>
+                    <h4 class="fw-light">Wikipedia, Sep 30</h4>
+                    <p>Vue.js (commonly referred to as Vue; pronounced "view") is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and</p>
+                    <a href="pages\vue_page.html" class="btn btn-outline-light" type="button">Continue Reading</a>
+                </div>
+                <div class="col-auto">
+                    <img class="bd-placeholder-img" width="200" height="250" src="images\logos\Vue.js_Logo_2.png"  >
+                </div>
+            </div>
+          </div>
+          <div class="col-md-0 p-1">
+            <div class="h-100 p-2 text-white bg-dark rounded-3 row g-0">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h2>GitHub</h2>
+                    <h4 class="fw-light">Wikipedia, Sep 21</h4>
+                    <p>GitHub, Inc. is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus acces</p>
+                    <a href="pages\github_page.html" class="btn btn-outline-light" type="button">Continue Reading</a>
+                </div>
+                <div class="col-auto">
+                    <img class="bd-placeholder-img" width="200" height="250" src="images\logos\github.jpg"  >
+                </div>
+            </div>
+          </div>
+
+          <div class="tab_bottom rounded-4 mt-3 mb-3 p-1">
+            <div class="row align-items-center">
+                <h3 class="btn light_color_txt">Load More...</h3>
+              </div>
+          
+          
+          
+      
+        
+      
+        
+    </main>
+
+      
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-6 col-md">
+            <svg height="120" width="120">
+                <defs>
+                  <filter id="f1" x="0" y="0" width="200%" height="200%">
+                    <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                    <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+                  </filter>
+                </defs>
+                <rect width="90" height="90" stroke="blue" stroke-width="3"
+                fill="green" filter="url(#f1)" />
+              </svg>
+            <small class="light_color_txt d-block mb-3 fw-light">&copy; 2023</small>
+          </div>
+          <div class="col-3 col-md">
+            
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="notAvailable.html">Team</a></li>
+              <li><a class="link-secondary" href="notAvailable.html">Locations</a></li>
+              <li><a class="link-secondary" href="notAvailable.html">Privacy</a></li>
+              <li><a class="link-secondary" href="notAvailable.html">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link href = "/style.css" rel="stylesheet">
+    <title>Blog</title>
+    <link rel="icon" type="image/x-icon" href="/images/monitor-icon.svg">
+</head>
+<body>
+    <header class="site-header sticky-top py-0">     
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+          <div class="container-fluid">
+              <svg height="50" width="50">
+                  <defs>
+                    <filter id="f1" x="0" y="0" width="200%" height="200%">
+                      <feOffset result="offOut" in="SourceGraphic" dx="10" dy="10" />
+                      <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+                    </filter>
+                  </defs>
+                  <rect width="30" height="30" stroke="blue" stroke-width="3"
+                  fill="green" filter="url(#f1)" />
+                </svg>
+            <a class="navbar-brand" href="#">Front-end Technologies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 me-5">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/TopAuthors.html">Top Authors</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Join
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/sign_in.html">Sign in.</a></li>
+                      <li><a class="dropdown-item" href="/sign_in.html">Be an author.</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="/sign_in.html">New? Sign up now !</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3 mt-lg-0" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+  </header>
+  <main>
+    <div class="container-fluid flex-row ">
+        <div class="row">
+            <div class="col-sm-9 g-3 bg-dark border border-success">
+                <div class="bg-dark m-md-1 ps-5 pb-4 intro_bottom">
+                    <div class="row pb-4 pt-5">
+                        <div class="col-3">
+                            <img class = "author-img"src="/images/logos/wikipedia.png" alt="img unavailable!!">
+                        </div>
+                        <div class="col-9">
+                            <h4 class="light_color_txt fw-light pt-3">Wikipedia</h4>
+                            <h6 class="light_color_txt fw-light">November 11</h6>
+                        </div>                        
+                    </div>
+                    <h1 class="light_color_txt">AngularJS</h1>
+                </div>
+                <div class="bg-dark m-md-1 ps-5 pb-4 pe-5 pt-5">
+                    <p class="light_color_txt fw-light pt-2 txt_justify fs-4" >AngularJS is a discontinued free and open-source JavaScript-based
+                       web framework for developing single-page applications. It was maintained mainly by Google and a community of individuals 
+                       and corporations. It aimed to simplify both the development and the testing of such applications by providing a framework
+                        for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in web applications and progressive web applications.
+
+                      AngularJS was used as the frontend of the MEAN stack, that consisted of MongoDB database, Express.js web application 
+                      server framework, AngularJS itself (or Angular), and Node.js server runtime environment.
+                      
+                      
+                        
+                    </p><p class="light_color_txt fw-light pt-2 txt_justify fs-4">As of January 1, 2022, Google no longer updates AngularJS to
+                       fix security, browser compatibility, or jQuery issues.[3][4][5] The Angular team recommends upgrading to Angular (v2+)
+                        as the best path forward, but they also provided some other options.[6]</p>
+
+                </div>                
+            </div>
+            <div class="col-sm-3 g-3 bg-dark border border-success">
+                <div class="bg-dark m-md-1 text-center pb-4">
+                    <h2 class="light_color_txt pt-5 pb-4">About</h2>
+                    <img class = "author-img"src="/images/logos/wikipedia.png" alt="img unavailable!!">
+                    <h4 class="light_color_txt fw-light pt-3">Wikipedia</h4>
+                    <p class="light_color_txt fw-light p-3">Wikipedia is a multilingual free online encyclopedia written 
+                        and maintained by a community
+                         of volunteers, known as Wikipedians, through open collaboration 
+                         and using a wiki-based editing system.</p>
+                    <a class = "light_color_txt fw-light" href ="https://en.wikipedia.org/wiki/Main_Page"> follow</a>
+
+                </div>
+                <div class="bg-dark m-md-1 text-center pt-4 pb-4" >
+                    <h3 class="light_color_txt pt-5 pb-4">More Reads</h3>                  
+
+                </div>
+                <div class="bg-dark m-md-1 text-center pt-4 pb-4">
+                    <h3 class="light_color_txt pt-5 pb-4">Help and Suggestions</h3>                  
+
+                </div>
+                <div class="bg-dark m-md-1 text-center pt-4 pb-4">
+                    <h3 class="light_color_txt pt-5 pb-4">Report</h3>                  
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+  </main>
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-6 col-md">
+        <svg height="120" width="120">
+            <defs>
+              <filter id="f1" x="0" y="0" width="200%" height="200%">
+                <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+              </filter>
+            </defs>
+            <rect width="90" height="90" stroke="blue" stroke-width="3"
+            fill="green" filter="url(#f1)" />
+          </svg>
+        <small class="light_color_txt d-block mb-3 fw-light">&copy; 2023</small>
+      </div>
+      <div class="col-3 col-md">
+        
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="/notAvailable.html">Team</a></li>
+          <li><a class="link-secondary" href="/notAvailable.html">Locations</a></li>
+          <li><a class="link-secondary" href="/notAvailable.html">Privacy</a></li>
+          <li><a class="link-secondary" href="/notAvailable.html">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
