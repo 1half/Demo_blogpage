@@ -8,7 +8,7 @@
     rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
     crossorigin="anonymous">
     <link href = "style.css" rel="stylesheet">
-    <title>page on CSS</title>
+    <title>Tailwind page</title>
     <link rel="icon" type="image/x-icon" href="images/monitor-icon.svg">
 </head>
 <body>
@@ -76,40 +76,30 @@
                         </div>
                         <div class="col-9">
                             <h4 class="light_color_txt fw-light pt-3">Wikipedia</h4>
-                            <h6 class="light_color_txt fw-light">November 12</h6>
+                            <h6 class="light_color_txt fw-light">November 9</h6>
                         </div>                        
                     </div>
-                    <h1 class="light_color_txt">Cascading Style Sheet.</h1>
+                    <h1 class="light_color_txt">Tailwind CSS</h1>
                 </div>
                 <div class="bg-dark m-md-1 ps-5 pb-4 pe-5 pt-5">
-                    <p class="light_color_txt fw-light pt-2 txt_justify fs-4" >Cascading Style Sheets (CSS) is a style sheet language
-                         used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as
-                          SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+                    <p class="light_color_txt fw-light pt-2 txt_justify fs-4" >Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables. Instead, it creates a list of "utility" CSS classes that can be used to style each element by mixing and matching.[3][4]
 
-                        CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can 
-                        improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable 
-                        multiple web pages to share formatting by specifying the relevant CSS in a separate .css file,
-                         which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page 
-                         load speed between the pages that share the file and its formatting.
+                      For example, in other traditional systems, there would be a class message-warning that would apply a yellow background color and bold text. To achieve this result in Tailwind, one would have to apply a set of classes created by the library: bg-yellow-200 and font-bold.
+                      
+                      As of 23rd January 2023, Tailwind CSS has over 64,400 stars on GitHub.[5]
                         
-                        Separation of formatting and content also makes it feasible to present the same markup page in different styles for 
-                        different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based 
-                        tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]
-                        
-                    </p><p class="light_color_txt fw-light pt-2 txt_justify fs-4">The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a 
-                        particular element. This cascading priority scheme is predictable.
-                        
-                        The CSS specifications are maintained by the World Wide Web Consortium (W3C).
-                         Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation
-                         service for CSS documents.[5]                       
-                        In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL.</p>
+                    </p><p class="light_color_txt fw-light pt-2 txt_justify fs-4">Tailwind offers the possibility to apply a utility class only in some situations through media queries, which is called a variant. The main use of variants is to design a responsive interface for various screen sizes.[7] There are also variants for the different states an element can have, such as hover : for when hovered, focus: when keyboard selected or active: when in use,[8] or when the browser or operating system has dark mode enabled.[9]
+
+                      Variants have two parts: the condition to be met and the class that is applied if the condition is met. For example, the variant md:bg-yellow-400 will apply the class bg-yellow-400 if the screen size is greater than the value defined for md.
+                      
+                      Tailwind CSS is developed using JavaScript, runs via Node.js, and installs with environment package managers like npm or yarn.[10]</p>
 
                 </div>                
             </div>
             <div class="col-sm-3 g-3 bg-dark border border-success">
                 <div class="bg-dark m-md-1 text-center pb-4">
                     <h2 class="light_color_txt pt-5 pb-4">About</h2>
-                    <img class = "author-img"src="/images/logos/wikipedia.png" alt="img unavailable!!">
+                    <img class = "author-img"src="images/logos/wikipedia.png" alt="img unavailable!!">
                     <h4 class="light_color_txt fw-light pt-3">Wikipedia</h4>
                     <p class="light_color_txt fw-light p-3">Wikipedia is a multilingual free online encyclopedia written 
                         and maintained by a community
